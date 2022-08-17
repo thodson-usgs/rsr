@@ -1,0 +1,751 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% rsr_latex_template.tex version 1.0 (June 2022)
+
+% THIS IS A TEMPLATE FOR THE USGS RESEARCH SCIENTIST RECORD. IT CAN BE RUN IN ANY SOFTWARE THAT READS .TEX FILES (LIKE TEXSTUDIO) OR ONLINE ON WEBSITES LIKE OVERLEAF WITH A FREE ACCOUNT.
+
+% Most places where you need to add text are indicated by *** YOUR TEXT HERE ***
+
+% If you aren't familiar with LaTeX:
+% PLEASE DO NOT CHANGE ANYTHING IN THE PREAMBLE (THE LINES BEFORE "\BEGIN{DOCUMENT}") AS IT WILL LIKELY BREAK THE TEMPLATE.
+
+% LaTeX tips:
+
+% The "%" in LaTeX indicates a comment. If you remove the "%", the line will change to code.
+
+% If you want to indicate percentage, add a "\" before the "%", like this: "\%"
+
+% For the bibliography section, you can put your name in bold using \textbf{} or underline using \underline{}.
+
+% If you need to start a new line, you can use " \\".
+
+% If your code breaks, look it up online. There are a lot of sources of LaTeX help out there.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage[english]{babel}
+\usepackage{caption}
+\usepackage{cite}
+\usepackage{natbib}
+\setlength{\bibsep}{3pt}
+\usepackage{parskip, titlesec, indentfirst}
+\setlength{\parindent}{0.5in}
+\usepackage{subfigure}
+\usepackage{fixltx2e}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{comment}
+\makeatletter
+\def\namedlabel#1#2{\begingroup
+	\def\@currentlabel{#2}%
+	\label{#1}\endgroup
+}
+\makeatother
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% START EDITING HERE
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\centering \LARGE U.S. Geological Survey – Research Scientist Record \\
+\vspace{10pt}
+\normalsize
+
+\centering \textbf{Timothy O. Hodson} \\
+
+\centering \textbf{Hydrologist, GS-1315-11} \\
+
+\vspace{5pt}
+
+\begin{tabular}{@{}r@{}l}
+
+\centering Center name &:	Central Midwest Water Science Center \\
+
+\centering Duty station &:	Urbana, Illinois \\
+
+\centering Date of entrance on duty to federal service &:	October 15, 2017\\
+
+\centering Date of last promotion &:	Month DD, 2022 or “none” \\
+
+\centering Review Cycle &:	Fall 2022\\
+
+\end{tabular}
+
+\vspace{10pt}
+\centering \textbf{Research Interests and Expertise} \\
+\centering up to 5 keywords or brief phrases \\
+
+\begin{enumerate}
+	\item model evaluation
+	\item uncertainty
+	\item modeling
+	\item computational science
+	\item missing data
+\end{enumerate}
+
+
+\vspace{10pt}
+\centering \textbf{Research Environment} \\
+\centering up to 2,500 characters, including spaces \\
+\raggedright
+
+
+
+
+
+*** YOUR RESEARCH ENVIRONMENT TEXT HERE ***
+
+
+
+
+
+\vspace{10pt}
+\centering \textbf{Factor 1: Research Assignment} \\
+\centering up to 7,000 characters, including spaces \\
+\raggedright
+
+
+
+
+
+*** YOUR FACTOR 1 TEXT HERE ***
+
+
+
+
+
+\vspace{10pt}
+\centering \textbf{Factor 2: Supervisory Controls} \\
+\centering up to 3,500 characters, including spaces \\
+\raggedright
+
+
+
+
+
+*** YOUR FACTOR 2 TEXT HERE ***
+
+
+
+
+
+\vspace{10pt}
+\centering \textbf{Factor 3: Guidelines and Originality} \\
+\centering up to 7,000 characters, including spaces \\
+\raggedright
+
+
+
+
+
+*** YOUR FACTOR 3 TEXT HERE ***
+
+
+
+
+
+\vspace{10pt}
+\centering \textbf{Factor 4: Contributions, Impact, and Stature} \\
+\centering up to 14,000 characters, including spaces \\
+\raggedright
+
+
+
+
+
+*** YOUR FACTOR 4 TEXT HERE ***
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+
+LaTeX code for contributions subheadings:
+
+\raggedright Background--
+\vspace{10pt}
+
+*** YOUR BACKGROUND TEXT HERE ***
+
+\vspace{10pt}
+\raggedright Role--
+\vspace{10pt}
+
+*** YOUR ROLE TEXT HERE ***
+
+\vspace{10pt}
+\raggedright Results--
+\vspace{10pt}
+
+*** YOUR RESULTS TEXT HERE ***
+
+\vspace{10pt}
+\raggedright Impact--
+\vspace{10pt}
+
+*** YOUR IMPACT TEXT HERE ***
+
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{10pt}
+\centering \textbf{Three Significant Contributions} \\
+\centering up to 10,500 characters total, including spaces \\
+
+
+\vspace{10pt}
+\raggedright \textit{Contribution 1} \\
+\vspace{10pt}
+
+
+\textbf{Hodson, TO}. 2022.
+Root-mean-square-error (RMSE) or mean absolute error (MAE):
+when to use them or not.
+\textbf{Geoscientific Model Development}. \url{https://doi.org/10.5194/gmd-15-5481-2022}
+
+\paragraph{Background}
+The task of evaluating competing models is fundamental to science.
+Models are evaluated based on an objective function,
+the choice of which ultimately influences what scientists learn from their observations.
+The mean absolute error (MAE) and root-mean-squared error (RMSE) are two such functions.
+Both are widely used, yet there remains enduring confusion over their use. 
+This article reviews the theoretical justification behind their usage,
+as well as alternatives for when they are not suitable.
+
+\paragraph{Role}
+I was the sole author of this paper.
+
+\paragraph{Results} 
+
+\paragraph{Impact} 
+The article was selected as a highlight article in the journal and
+included in the Encyclopedia of Geosciences.
+The executive editor writes "this is a beautifully written exposition of the propreties
+of two key statistics used in the evaluation of models. Everyone working with models
+should read this paper."
+
+
+\vspace{10pt}
+\raggedright \textit{Contribution 2} \\
+\vspace{10pt}
+
+\textbf{Hodson, TO}, Over, TM. and Foks, S.S. 2021.
+Mean squared error, deconstructed.
+\textbf{Journal of Advances in Modeling Earth Systems}. \url{https://doi.org/10.1029/2021MS002681}
+
+\paragraph{Background}
+Models are essential scientific tools for explaining and predicting phenomena
+ranging from weather and climate, to health outcomes, to economic development,
+to the origins of the universe, and testing competing models is one of the most
+basic scientific activites.
+Yet, how scientists evaluate and justify their models can be inconsistent or even arbitrary.
+Traditionally, one performance metric—such as mean squared error—is used to identify the best model, 
+but one metric provides little insight into what aspects of a model are “good” or “bad.” 
+This paper proposes a basic language for expressing different aspects of a model's performance. 
+On one hand, this is useful for determining which aspects of model may require revision, 
+but it also allows the modeler to separate out the best elements among several models and combine them to form an ensemble, 
+analogous to how an audio engineer mixes together multiple tracks to form the best rendition of a musical piece.
+
+\paragraph{Role}
+I was the lead author of this paper and developed the  .
+
+\paragraph{Results} 
+
+\paragraph{Impact} 
+
+
+
+\vspace{10pt}
+\raggedright \textit{Contribution 3} \\
+\vspace{10pt}
+
+
+*** YOUR CONTRIBUTION 3 TEXT HERE ***
+
+\vspace{10pt}
+\centering \textbf{Supporting Information} \\
+
+
+\vspace{10pt}
+\raggedright \large \textit{A. Current and Recent Projects} \\
+\normalsize
+\vspace{10pt}
+
+
+
+
+*** YOUR CURRENT AND RECENT PROJECTS HERE ***
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+
+BIBLIOGRAPHY
+
+EXAMPLE LATEX TEXT:
+
+B9. Other Authors, \textbf{Me}, Year, Article Title: Journal, volume, number, pages, https://dx.doi.org/number. IP number, BAO approval date. [C:10, D:20, I:30, W:40]
+Last promotion: Month YYYY
+
+B10. Student Author*, \underline{Me}, Other Authors, Year, Article Title: Journal, volume, number, pages, https://dx.doi.org/number. IP number, BAO approval date. [C:90, D:50, I:20, W:10]
+
+Where C = Concept, D = Data, I = Interpretation, W = Writing.
+
+Optional code-- As in the list of projects, you can make a description list for the bibliography and label each item so you can reference it in the text. In this example, we have given "B1." a named label "catsarticle". Then, you can reference it in the text, like "My first article (\ref{catsarticle"}) was cited in several other publications."
+
+Try the following:
+
+My first article (\ref{catsarticle}) was cited in several other publications (\ref{proj20}).
+
+\begin{description}
+	\item[B1.\namedlabel{catsarticle}{B1}] Other Authors, \textbf{Me}, Year, Article Title: Journal, volume, number, pages, https://dx.doi.org/number. IP number, BAO approval date. [C:10, D:20, I:30, W:40]
+	\item[B2.\namedlabel{proj20}{B2}] Other Authors, \underline{Me}, Year, Article Title: Journal, volume, number, pages, https://dx.doi.org/number. IP number, BAO approval date. [C:90, D:50, I:20, W:10]
+	\item[B3.\namedlabel{proj21}{B3}] Other Authors, Year, Article Title: Journal, volume, number, pages, https://dx.doi.org/number. IP number, BAO approval date. [C:90, D:50, I:20, W:10]
+\end{description}
+
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{10pt}
+\raggedright \large \textit{B. Bibliography} \\
+\normalsize
+
+\vspace{10pt}
+\raggedright \textbf{Published products} \\
+\vspace{10pt}
+
+
+
+
+
+*** YOUR PUBLICATIONS BEFORE JOINING USGS HERE ***
+
+
+
+
+
+\centering Publications after joining USGS \\
+\vspace{-10pt}
+\hrulefill
+\raggedright
+\vspace{10pt}
+
+
+
+
+
+*** YOUR PUBLICATIONS AFTER JOINING USGS HERE ***
+
+
+
+
+
+\vspace{10pt}
+\raggedright \textbf{Products approved for publication} \\
+\vspace{10pt}
+
+
+
+
+
+*** YOUR PRODUCTS APPROVED FOR PUBLICATION HERE ***
+
+
+
+
+
+\vspace{10pt}
+\raggedright \textbf{Unpublished technical reports} \\
+\vspace{10pt}
+
+
+
+
+
+*** YOUR UNPUBLISHED TECHNICAL REPORTS HERE ***
+
+
+
+
+
+\vspace{10pt}
+\raggedright \textbf{Submitted manuscripts} \\
+\vspace{10pt}
+
+
+
+
+
+*** YOUR SUBMITTED MANUSCRIPTS HERE ***
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+
+PRESENTATIONS BEFORE JOINING USGS
+
+Optional LaTeX code-- As in the list of projects, you can make a description list for presentations and label each item so you can reference it in the text. In this example, we have given "C1." a named label "catspres". Then, you can reference it in the text, like "Over 50 people attended my presentation on cats (\ref{catspres"})."
+
+Try the following:
+
+Over 50 people attended my presentation on cats (\ref{catspres}).
+
+\begin{description}
+	\item[C1.\namedlabel{catspres}{C1}] Student Author*, Me, Other Authors, Date, Presentation Title, Venue. INVITED
+	\item[C2.\namedlabel{pres20}{C2}] Student Author*, Me, Other Authors, Date, Presentation Title, Venue. INVITED
+	\item[C3.\namedlabel{pres21}{C3}] Student Author*, Me, Other Authors, Date, Presentation Title, Venue. INVITED
+\end{description}
+
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{10pt}
+\raggedright \large \textit{C. Presentations} \\
+\normalsize
+\vspace{10pt}
+
+
+
+
+
+*** YOUR PRESENTATIONS BEFORE JOINING USGS HERE ***
+
+
+
+
+
+\centering Presentations after joining USGS \\
+\vspace{-10pt}
+\hrulefill
+\raggedright
+\vspace{10pt}
+
+
+
+
+
+*** YOUR PRESENTATIONS AFTER JOINING USGS HERE ***
+
+
+
+
+
+\vspace{10pt}
+\raggedright \textbf{Invited or noteworthy presentations} \\
+\vspace{10pt}
+
+
+
+
+
+*** YOUR INVITED OR NOTEWORTHY PRESENTATIONS HERE ***
+
+
+
+
+
+\vspace{10pt}
+\raggedright \textbf{Contributed presentations} \\
+\vspace{10pt}
+
+
+
+
+
+*** YOUR CONTRIBUTED PRESENTATIONS HERE ***
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+
+For bullets, use this code:
+\begin{itemize}
+	\item FIRST
+	\item SECOND
+	\item THIRD
+\end{itemize}
+
+For numbered lists, use this code:
+\begin{enumerate}
+	\item FIRST
+	\item SECOND
+	\item THIRD
+\end{enumerate}
+
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{10pt}
+\raggedright \large \textit{D. Professional and Scientific Service} \\
+\normalsize
+\vspace{10pt}
+
+
+
+
+
+*** YOUR PROFESSIONAL AND SCIENTIFIC SERVICE HERE ***
+
+
+
+
+
+\vspace{10pt}
+\raggedright \large \textit{E. Academic Service} \\
+\normalsize
+
+\vspace{10pt}
+\raggedright \textbf{Academic appointments} \\
+\vspace{10pt}
+
+None.
+
+\vspace{10pt}
+\raggedright \textbf{Students or postdocs advised or mentored} \\
+\vspace{10pt}
+
+\begin{itemize}
+\item Katherine Miles,
+  University of Illinois, Urbana-Champaign
+  December 2021--present.
+\item Daniel Kymm,
+  University of Illinois, Urbana-Champaign
+  June 2021--present.
+\end{itemize}
+
+\vspace{10pt}
+\raggedright \textbf{Courses taught and seminars presented} \\
+\vspace{10pt}
+
+None.
+
+
+\vspace{10pt}
+\raggedright \large \textit{F. Technical Training Provided} \\
+\normalsize
+\vspace{10pt}
+
+None.
+
+\vspace{10pt}
+\raggedright \large \textit{G. Awards and Recognition} \\
+\normalsize
+\vspace{10pt}
+
+
+
+
+
+*** YOUR AWARDS AND RECOGNITION HERE ***
+
+
+
+
+
+\vspace{10pt}
+\raggedright \large \textit{H. Special Assignments} \\
+\normalsize
+\vspace{10pt}
+
+None.
+
+\vspace{10pt}
+\raggedright \large \textit{I. Inventions and Patents} \\
+\normalsize
+\vspace{10pt}
+
+None.
+
+
+\vspace{10pt}
+\raggedright \large \textit{J. Outreach and Media Coverage} \\
+\normalsize
+\vspace{10pt}
+
+
+
+
+
+*** YOUR OUTREACH AND MEDIA COVERAGE HERE ***
+
+
+
+
+
+\vspace{10pt}
+\raggedright \large \textit{K. Previous Professional Positions} \\
+\normalsize
+\vspace{10pt}
+
+
+
+
+\begin{itemize}
+\item \textit{Hydrologic Technician (GS-XXXX-08) \hfill October 2017--October 2018}
+
+\item \textit{Field Coordinator, Illinois State Water survey \hfill 2015--2017}
+\item \textit{Intern, City of Urbana \hfill 2015--2016} \\
+  Developed an interactive JavaScript web map shocasing historical buildings and architecture.
+\item \textit{Intern, University Corporation of Atmospheric Research \hfill August, 2014}
+\end{itemize}
+
+
+
+\vspace{10pt}
+\raggedright \large \textit{L. Education} \\
+\normalsize
+\vspace{10pt}
+
+
+\begin{itemize}
+\item Northern Illinois University, \textit{Doctor of Philosophy}, August 2017\\
+Major: Geology, Minor: Geospatial information science
+\item Northern Illinois University, \textit{Master of Science}, August 2012\\
+Major: Geology
+\item University of Wisconsin--Madison, \textit{Bachelor of Science}, December 2007\\
+Major: Geology and geophysics
+\end{itemize}
+
+
+\vspace{10pt}
+\textbf{Privacy Act Notice:} \\
+\scriptsize Pursuant to Section 3(e)(3) of the Privacy Act of 1974 (Public Law 93-57), the individual furnishing information on this form is hereby advised as follows: 1. The authority for solicitation of the information is 5 USC 552(a). 2. The principal purpose for which the information is intended to be used is for the U.S. Geological Survey research and development peer panel review process. 3. The routine disclosure of the information is to scientific, management and administrative staff who are participants in the peer review process or who are in the human resources office. 4. The effect on the individual of not providing all or any part of the requested information is not having an up-to-date Research or Development Scientific Record for peer review thereby resulting in a delayed or no peer review. 5. This record and information in this record may be used by the Federal government in connection with the hiring of an employee, the issuance of a security clearance, the conducting of a security or suitability investigation of an individual, the classifying of jobs, the letting of a contract, and the issuance of a license, grant, or other benefits or awards to the extent that the information is relevant and necessary.
+\normalsize
+
+
+
+\newpage
+\centering \large \textbf{References}
+\normalsize
+
+
+\begin{multicols}{2}
+\raggedright
+
+%Reference 1
+Amy Beussink\\
+%Center Director\\
+ambeussi@usgs.gov \\
+573-308-3665 \\
+Relationship to you: Center Director
+
+\vspace{10pt}
+
+%Reference 2
+Amy Russell\\
+%Supervisory Hydrologist \\
+arussell@usgs.gov \\
+217-308-3665\\
+Relationship to you: Supervisor
+
+\vspace{10pt}
+
+%Reference 3
+Terry A. Kenny\\
+Hydrologist\\
+U.S. Geological Survey\\
+tkenny@usgs.gov  \\
+801-908-5046\\
+Relationship to you: Uncertainty Program coordinator
+
+\vspace{10pt}
+
+%Reference 4
+Thomas M. Over\\
+Research Hydrologist\\
+U.S. Geological Survey\\
+\url{tmover@usgs.gov}\\
+217-328-9757\\
+Relationship to you: Collaborator
+
+\vspace{10pt}
+
+%Reference 5
+Sydney S. Foks\\
+Hydrologist\\
+U.S. Geological Survey\\
+\url{sfoks@usgs.gov} \\
+303-326-5022\\
+Relationship to you: HyTest Team Lead
+
+\vspace{10pt}
+%Reference 6
+Greg E. Schwarz\\
+Economist\\
+U.S. Geological Survey\\
+\url{gschwarz@usgs.gov}\\
+703-648-5713\\
+Relationship to you: Collaborator
+
+\vspace{10pt}
+%Reference 7
+Roland J. Viger\\
+Chief, Geo-Intelligence Branch\\
+U.S. Geological Survey\\
+\url{rviger@usgs.gov} \\
+303-541-3075\\
+Relationship to you: Program Manager
+
+\vspace{10pt}
+
+%Reference 8
+Gregg McIsaac\\
+Professor Emeritus\\
+University of Illinois\\
+\url{gmcisaac@illinois.edu}\\
+XXX-XXX-XXXX\\
+Relationship to you: Collaborator
+   
+\vspace{10pt}
+
+%Reference 9
+Rich P. Signell\\
+Research Oceanographer\\
+U.S. Geological Survey\\
+\url{rsignell@usgs.gov}\\
+774-392-1095\\
+Relationship to you: Collaborator
+
+\vspace{10pt}
+
+%Reference 10
+Ross D. Powell\\
+Professor Emeritus\\
+Northern Illinois University\\
+\url{rpowell@niu.edu}\\
+XXX-XXX-XXXX\\
+Relationship to you: PhD Advisor
+
+%Reference 11
+%Reference 12
+
+
+\end{multicols}
+
+\end{document}
